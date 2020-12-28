@@ -1,0 +1,48 @@
+
+main {
+
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+
+}
+
+
+.PlayersContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border: 1px solid black;
+  padding: 1em;
+
+  .PlayerBox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    margin: 0px;
+    margin-bottom: 1em;
+  }
+
+  .PlayerCard {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border: 2px solid black;
+    padding: 1em;
+    margin: 1em;
+
+    img {
+      width: 80px;
+    }
+
+    button {
+      margin-bottom: 5px;
+    }
+    
+  }
+}

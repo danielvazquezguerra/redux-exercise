@@ -1,16 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-import Jugadores from '../Components/Jugadores';
-import Titulares from '../Components/Titulares';
+
+import './App.scss';
+import Jugadores from './Components/Jugadores';
+import Titulares from './Components/Titulares';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+
 
 function App() {
+
+
+
   return (
     
-    <main>
-      <h1>Jugadores Manager</h1>
-      <Jugadores />
-      <Titulares />
-    </main>
+    <Provider store={store}>
+
+      <main>
+        <h1>Jugadores Manager</h1>
+        <Jugadores />
+        <Titulares />
+      </main>
+
+    </Provider>
   );
 }
 
